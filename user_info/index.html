@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta http-equiv="X-UA-Compatible">
+    -->
+
+    <title>Account Info</title>
+
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="node_modules/axios/dist/axios.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-img">
+                    <img src="" alt="">
+                    <div class="signup-img-content">
+                        <h2>Your Information </h2>
+                        <p> !</p>
+                    </div>
+                </div>
+                <div class="signup-form">
+                    <form method="POST" class="register-form" id="register-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <div class="form-input">
+                                    <label for="display_name" class="required">Display Name</label>
+                                    <label id="availMessage"></label>
+                                    <label id="blankNameMessage"></label>
+                                    <input type="text" name="display_name" id="display_name" />
+                                </div>
+                                <div class="form-input">
+                                    <label for="zodi_sign" class="required">Zodiac Sign</label>
+                                    <input type="text" name="zodi_sign" id="zodi_sign" list="horoscopes" />
+                                    <label id="blankZodiacMessage"></label>
+                                    <datalist id="horoscopes"></datalist>
+                                </div>
+                                <div class="form-input ui-widget">
+                                    <label for="country" class="required">Country or Region</label>
+                                    <input type="text" name="country" id="country" list="countries" />
+                                    <label id="blankCountryMessage"></label>
+                                    <datalist id="countries"></datalist>
+                                </div>
+
+
+                            </div>
+                            <div class="form-group">
+                                <div class="form-input">
+                                    <label for="email">Email</label>
+                                    <input type="text" name="email" id="email" />
+                                </div>
+                                <div class="form-select">
+                                    <div class="label-flex">
+                                        <label for="meal_preference">Gender</label>
+
+                                    </div>
+                                    <div class="select-list">
+                                        <select name="gender" id="meal_preference">
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                            <option value="Non-Binary">Non-Binary</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-input">
+                                    <label for="chequeno">Favorite Horoscope</label>
+                                    <input type="text" name="fav-horoscope" id="fav-horoscope" list="horoscopes" />
+                                    <datalist id="horoscopes"></datalist>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="donate-us">
+                            <label>Age</label>
+                            <div class="price_slider ui-slider ui-slider-horizontal">
+                                <div id="slider-margin"></div>
+                                <span class="donate-value" id="value-lower"></span>
+                            </div>
+                        </div>
+                        <div class="form-submit">
+                            <input type="submit" value="Submit" class="submit" id="submit" name="submit" />
+                            <input type="submit" value="Reset" class="submit" id="reset" name="reset" />
+                            <input type="submit" value="Close" class="submit" id="cancel" name="cancel" />
+                            <!-- <input type="submit" value="Sign Out" class="submit has-background-danger has-text-danger" id="signout" name="signout" /> -->
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <p id="message"></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+    <script src="vendor/nouislider/nouislider.min.js"></script>
+    <script src="vendor/wnumb/wNumb.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+
+
+    <script src="js/main.js"></script>
+    <script src="info.js"></script>
+    <script src="js/autocomplete.js"></script>
+    <script src="js/signout.js"></script>
+    <script src="js/checkDisplayName.js"></script>
+
+</body>
+<!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>

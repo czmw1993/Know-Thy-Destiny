@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>User Page</title>
+
+        <!-- Include links to CSS stylesheets below -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+
+    </head>
+
+    <body>
+        <div id="login">
+            <div class="login-card">
+                <div class="card-title">
+                    <h1>Welcome!</h1>
+                </div>
+
+                <div class="content">
+                    <form id="form">
+                        <div class="field">
+                            <div class="control">
+                                <button type="submit" class="button is-primary profileButton" href="profile.html">My Profile</button>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <button type="submit" class="button is-danger logOutButton">Sign Out</button>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control">
+                                <p id="message"></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Include links to JavaScript files below -->
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/axios/dist/axios.js"></script>
+        <script src="userPage.js"></script>
+        <footer class="footer">
+          <div class="content has-text-centered">
+            <p>
+              <Strong>Icons </Strong> made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            </p>
+          </div>
+        </footer>      
+    </body>
+</html>

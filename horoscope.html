@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Know Thy Destiny</title>
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Resource style -->
+    <link rel="stylesheet" href="../css/demo.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+
+    <style class="horo">
+        body {
+            background-image: url("https://media.giphy.com/media/MoVMxwfuPSrp6/giphy.gif");
+            background-repeat: repeat;
+            background-color: #cccccc;
+        }
+        
+        .fade {
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        
+        .fade:hover {
+            opacity: 1;
+            transition: all 0.3s ease;
+        }
+        /* .grow:hover {
+            -webkit-transform: scale(1.3);
+            -ms-transform: scale(1.3);
+            transform: scale(1.3);
+        } */
+        
+        .card:hover {
+            box-shadow: 1px 1px #1d4363, 2px 2px #3d84be, 3px 3px #95b2ca;
+            -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+            transition: all 0.3s ease;
+        }
+        
+        .no-js #loader {
+            display: none;
+        }
+        
+        .js #loader {
+            display: block;
+            position: absolute;
+            left: 100px;
+            top: 0;
+        }
+        
+        .se-pre-con {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url("spinner.gif") center no-repeat #fff;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- <script type='text/javascript' src='loadImg.js'></script>	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	}); -->
+    <script type='text/javascript'>
+        $(window).on("load", (function() {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut(2500);;
+        }));
+    </script>
+
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="dropdown navigation">
+        <a class="navbar-item" href="index.html">
+            <img src="img/logo-KTD.png" width="180" height="300">
+        </a>
+        <div class="navbar-brand">
+
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <ul class="cd-main-nav__list js-signin-modal-trigger">
+                <!-- inser more links here -->
+                <li><a class="cd-main-nav__item cd-main-nav__item--signup" href="horoscope.html" data-signin="signup">Home</a></li>
+                <li><a class="cd-main-nav__item cd-main-nav__item--signin has-background-info" href="ForYou.html" data-signin="login">Your Personal Luck</a></li>
+                <li><a class="cd-main-nav__item cd-main-nav__item--userprofile" href="user_info/index.html" data-signin="signup">User Profile</a></li>
+                <!-- <span class="cd-main-nav__item tag is-primary is-medium" id=loginsta></span> -->
+            </ul>
+
+
+
+            <!-- <div class="navbar-start">
+                <a class="navbar-item" href="horoscope.html">
+              Home
+            </a>
+                <a class="navbar-item" href="ForYou.html">
+              For You
+            </a>
+                <a class="navbar-item" href="user_info/index.html">
+              Profile
+            </a>
+            </div> -->
+
+
+        </div>
+
+
+        <ul class="cd-main-nav__list js-signin-modal-trigger">
+            <li>
+                <a class="cd-main-nav__item2 cd-main-nav__item--welcome" data-signin="signup"></a>
+            </li>
+            <li><a class="cd-main-nav__item cd-main-nav__item--logout" data-signin="signup">Log Out</a></li>
+
+        </ul>
+    </nav>
+
+    <section class="hero is-dark is-small is-bold has-text-centered">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    You've logged in. <span></span>
+                </h1>
+                <h2 class="subtitle">
+                    Please view the daily updates for 12 signs.
+                </h2>
+            </div>
+        </div>
+    </section>
+    <!-- <div class="se-pre-con"></div> -->
+    <div class="se-pre-con"></div>
+    <div id="root"></div>
+
+    <script src="node_modules/axios/dist/axios.js"></script>
+    <script src="zodiacData.js"></script>
+    <script src="horoscope_render.js" type="module"></script>
+    <script src="signout.js"></script>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <Strong>Icons </Strong> made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

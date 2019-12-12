@@ -1,0 +1,19 @@
+{
+    "name": "frontend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "page_render.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "browser-sync": "^2.26.7",
+        "bulma": "^0.8.0",
+        "bulma": "^0.8.0",
+        "cors": "^2.8.5",
+        "esm": "^3.2.25",
+        "jquery": "^3.4.1"
+    }
+}

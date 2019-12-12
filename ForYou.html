@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Thy Destiny</title>
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Resource style -->
+    <link rel="stylesheet" href="../css/demo.css">
+    <script src="signout.js"></script>
+    <style class='foryou'>
+        .blockquote {
+            padding: 60px 80px 40px;
+            position: relative;
+        }
+        
+        .blockquote p {
+            font-family: Georgia, serif;
+            font-size: 1.5em;
+            font-style: italic;
+            line-height: 1.4 !important;
+            color: gray;
+            transition: all 0.3s ease;
+            /* font-family: "Utopia-italic";
+            font-size: 35px;
+            font-weight: 700px;
+            text-align: center; */
+        }
+        /*blockquote p::before {
+    content: "\f095"; 
+    font-family: FontAwesome;
+   display: inline-block;
+   padding-right: 6px;
+   vertical-align: middle;
+  font-size: 180px;
+ }*/
+        
+        .blockquote:before {
+            position: absolute;
+            font-family: 'FontAwesome';
+            top: 0;
+            content: "\f10d";
+            font-size: 200px;
+            color: rgba(0, 0, 0, 0.1);
+        }
+        
+        .blockquote::after {
+            content: "";
+            top: 20px;
+            left: 50%;
+            margin-left: -100px;
+            position: absolute;
+            border-bottom: 3px solid #bf0024;
+            height: 3px;
+            width: 200px;
+        }
+        
+        #newhoro {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="dropdown navigation">
+        <a class="navbar-item" href="index.html">
+            <img src="img/logo-KTD.png" width="180" height="300">
+        </a>
+        <div class="navbar-brand">
+
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <ul class="cd-main-nav__list js-signin-modal-trigger">
+                <!-- inser more links here -->
+                <li><a class="cd-main-nav__item cd-main-nav__item--signup" href="horoscope.html" data-signin="signup">Home</a></li>
+                <li><a class="cd-main-nav__item cd-main-nav__item--signin has-background-info" href="ForYou.html" data-signin="login">Your Personal Luck</a></li>
+                <li><a class="cd-main-nav__item cd-main-nav__item--userprofile" href="user_info/index.html" data-signin="signup">User Profile</a></li>
+                <!-- <span class="cd-main-nav__item tag is-primary is-medium" id=loginsta></span> -->
+            </ul>
+
+
+
+            <!-- <div class="navbar-start">
+                        <a class="navbar-item" href="horoscope.html">
+                      Home
+                    </a>
+                        <a class="navbar-item" href="ForYou.html">
+                      For You
+                    </a>
+                        <a class="navbar-item" href="user_info/index.html">
+                      Profile
+                    </a>
+                    </div> -->
+        </div>
+
+
+        <ul class="cd-main-nav__list js-signin-modal-trigger">
+            <li>
+                <a class="cd-main-nav__item2 cd-main-nav__item--welcome" data-signin="signup"></a>
+            </li>
+            <li><a class="cd-main-nav__item cd-main-nav__item--logout">Log Out</a></li>
+
+        </ul>
+    </nav>
+    <div id="root"></div>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/axios/dist/axios.js"></script>
+    <script src="ForYouData.js"></script>
+    <script src="ForYou_render.js" type="module"></script>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <Strong>Icons </Strong> made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            </p>
+        </div>
+    </footer>
+    <script src="signout.js"></script>
+</body>
+
+</html>
